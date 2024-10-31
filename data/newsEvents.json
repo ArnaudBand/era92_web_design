@@ -1,0 +1,28 @@
+{
+  "news": [
+    {
+      "title": "New Community Center Opens",
+      "date": "2024-11-01",
+      "description": "Our new center is open and ready to serve!"
+    },
+    {
+      "title": "Annual Fundraiser Success",
+      "date": "2024-10-15",
+      "description": "Thanks to your support, we raised $50,000!"
+    }
+  ],
+  "events": [
+    {
+      "title": "Volunteer Day",
+      "date": "2024-12-05",
+      "location": "Main Office",
+      "description": "Join us for a day of community service."
+    },
+    {
+      "title": "Holiday Giving Campaign",
+      "date": "2024-12-20",
+      "location": "Online",
+      "description": "Help us reach our holiday fundraising goals."
+    }
+  ]
+}
