@@ -23,3 +23,15 @@ body {
 .clip {
   clip-path: polygon(0 0, 0 100%, 15% 76%, 25% 100%, 39% 75%, 53% 100%, 67% 75%, 76% 100%, 91% 74%, 100% 100%, 100% 0, 42% 0);
 }
+
+/* When input is focused or has content */
+input:focus ~ .input-text,
+input:valid ~ .input-text {
+  @apply text-blue-500 bg-white transform -translate-y-5 -translate-x-4 scale-75;
+}
+
+/* When textarea is focused or has content */
+textarea:focus ~ .input-text,
+textarea:valid ~ .input-text {
+  @apply text-blue-500 bg-white transform -translate-y-5 -translate-x-4 scale-75;
+}
