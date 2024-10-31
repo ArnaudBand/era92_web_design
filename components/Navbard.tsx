@@ -13,7 +13,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <Link className="text-black" href="/">
-              Nonprofit
+              Watu Care
             </Link>
           </div>
 
