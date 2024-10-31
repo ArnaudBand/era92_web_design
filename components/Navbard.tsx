@@ -4,7 +4,7 @@ import Link from "next/link";
 import useModal from "@/hooks/useModal";
 
 export default function Navbar() {
-  const { isOpen, openModal, closeModal, toggleModal } = useModal();
+  const { isOpen, closeModal, toggleModal } = useModal();
 
   return (
     <nav className="bg-white shadow-md">

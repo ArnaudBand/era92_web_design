@@ -53,7 +53,7 @@ const TestimonialSlider = () => {
     <div className="w-full max-w-3xl mx-auto p-4 relative">
       <div className="w-full bg-white rounded-lg shadow-md py-4 min-h-[200px] flex flex-col items-center justify-center space-y-4">
         <p className="text-gray-600 italic text-center">
-          "{testimonials[currentIndex].text}"
+          &quot;{testimonials[currentIndex].text}&quot;
         </p>
         <p className="mt-4 font-bold text-gray-800 text-center">
           - {testimonials[currentIndex].author}
