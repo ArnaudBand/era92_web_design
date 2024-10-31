@@ -21,7 +21,7 @@ export default function ProgramsPage() {
             <h2 className="text-3xl font-semibold text-center mb-6">Success Stories</h2>
             <div className="flex flex-wrap justify-center gap-8">
                <div className="w-full sm:w-1/2 lg:w-1/3 bg-white rounded-lg shadow-md p-6">
-                  <p className="text-gray-600">"Through this program, I've gained valuable skills that helped me secure a job in my community."</p>
+                  <p className="text-gray-600">&quot;Through this program, I've gained valuable skills that helped me secure a job in my community.&quot;</p>
                   <p className="mt-4 font-bold text-gray-800">- John, Participant</p>
                </div>
             </div>
