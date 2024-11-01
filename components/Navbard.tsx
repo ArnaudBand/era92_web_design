@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import useModal from "@/hooks/useModal";
+import Image from "next/image";
 
 export default function Navbar() {
   const { isOpen, closeModal, toggleModal } = useModal();
@@ -11,9 +12,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center border border-spacing-1 border-black/90 rounded-full">
-            <Link className="text-black font-bold italic" href="/">
-              Watu Care
+          <div className="flex items-center">
+            <Link className="text-black font-bold italic flex items-center" href="/">
+              <Image src="/assets/logo.svg" alt="Watu Care" width={100} height={100} />
+              <p>Watu Care</p>
             </Link>
           </div>
 
