@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { programs } from '@/types/index'; // Import the programs array
+import Image from 'next/image';
 
 const Programs = () => {
   // State to manage the expanded view
@@ -28,7 +29,7 @@ const Programs = () => {
           >
             {/* Image Section */}
             <div className="md:w-1/2">
-              <img
+              <Image
                 src={program.images[1]}
                 alt={program.title}
                 className="w-full h-full object-cover rounded-md shadow-lg"

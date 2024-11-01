@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
@@ -13,12 +11,6 @@ L.Icon.Default.mergeOptions({
 });
 
 const MapComponent = () => {
-   useEffect(() => {
-      // Ensure window and document are available for Leaflet
-      if (typeof window !== "undefined" && typeof document !== "undefined") {
-         L.map;
-      }
-   }, []);
 
    const locations = [
       { id: 1, name: "Community Center", position: [0.2498, 32.6092] as [number, number] },
