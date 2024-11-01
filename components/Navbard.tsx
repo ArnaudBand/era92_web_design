@@ -15,7 +15,6 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link className="text-black font-bold italic flex items-center" href="/">
               <Image src="/assets/logo.svg" alt="Watu Care" width={100} height={100} />
-              <p>Watu Care</p>
             </Link>
           </div>
 
