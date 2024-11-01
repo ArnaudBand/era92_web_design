@@ -5,6 +5,7 @@ import Link from "next/link";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import LatestNewsWidget from "@/components/LatestNewsWidget";
 import UpcomingEventsWidget from "@/components/UpcomingEventsWidget";
+import ImpactCommunity from "@/components/ImpactCommunity";
 
 export default function HomePage() {
   return (
