@@ -15,8 +15,10 @@ export default function DonatePage() {
   const [visaCardNumber, setVisaCardNumber] = useState<string>("");
   const [visaExpiryDate, setVisaExpiryDate] = useState<string>("");
   const [visaCVV, setVisaCVV] = useState<string>("");
-  const [mobileMoneyProvider, setMobileMoneyProvider] = useState<string>("MoMo Pay");
-  const [mobileMoneyPhoneNumber, setMobileMoneyPhoneNumber] = useState<string>("");
+  const [mobileMoneyProvider, setMobileMoneyProvider] =
+    useState<string>("MoMo Pay");
+  const [mobileMoneyPhoneNumber, setMobileMoneyPhoneNumber] =
+    useState<string>("");
 
   const handleDonate = () => {
     if (paymentMethod === "PayPal" && !paypalEmail) {
@@ -45,7 +47,10 @@ export default function DonatePage() {
     const isBaseFormValid = donorName && donorEmail && (amount ?? 0) > 0; // Check if base fields are filled
     const isPaymentValid =
       (paymentMethod === "PayPal" && paypalEmail) ||
-      (paymentMethod === "Visa" && visaCardNumber && visaExpiryDate && visaCVV) ||
+      (paymentMethod === "Visa" &&
+        visaCardNumber &&
+        visaExpiryDate &&
+        visaCVV) ||
       (paymentMethod === "Mobile Money" && mobileMoneyPhoneNumber);
 
     return isBaseFormValid && isPaymentValid; // Return true only if both conditions are met
@@ -55,19 +60,30 @@ export default function DonatePage() {
     <div className="bg-gray-50 py-16 px-6 text-black">
       {!thankYou ? (
         <>
-          <h2 className="text-3xl font-semibold text-center mb-10">Support Our Mission</h2>
+          <h2 className="text-3xl font-semibold text-center mb-10">
+            Support Our Mission
+          </h2>
 
           {/* Suggested Donation Tiers */}
           <section className="text-center mb-10">
             <h3 className="text-2xl font-semibold mb-4">Choose an Amount</h3>
             <div className="flex justify-center gap-4">
-              <button onClick={() => setAmount(10)} className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded">
+              <button
+                onClick={() => setAmount(10)}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded"
+              >
                 $10
               </button>
-              <button onClick={() => setAmount(25)} className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded">
+              <button
+                onClick={() => setAmount(25)}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded"
+              >
                 $25
               </button>
-              <button onClick={() => setAmount(50)} className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded">
+              <button
+                onClick={() => setAmount(50)}
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 rounded"
+              >
                 $50
               </button>
             </div>
@@ -168,7 +184,9 @@ export default function DonatePage() {
               <>
                 {/* Mobile Money Provider Selection */}
                 <label className="block mb-4">
-                  <span className="text-gray-700">Choose Mobile Money Provider:</span>
+                  <span className="text-gray-700">
+                    Choose Mobile Money Provider:
+                  </span>
                   <div className="flex space-x-4">
                     {["MoMo Pay", "Airtel Money"].map((provider) => (
                       <button
@@ -221,7 +239,11 @@ export default function DonatePage() {
             <button
               onClick={handleDonate}
               disabled={!isFormValid()} // Disable button if form is not valid
-              className={`w-full py-2 rounded ${isFormValid() ? 'bg-blue-500 hover:bg-blue-600 text-white' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
+              className={`w-full py-2 rounded ${
+                isFormValid()
+                  ? "bg-blue-500 hover:bg-blue-600 text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+              }`}
             >
               Donate ${amount}
             </button>
@@ -231,7 +253,9 @@ export default function DonatePage() {
           <section className="text-center mb-10">
             <h3 className="text-2xl font-semibold mb-4">Your Impact</h3>
             <p className="max-w-xl mx-auto text-gray-600">
-              Every donation helps us provide essential services, from educational workshops to healthcare access for underserved communities.
+              Every donation helps us provide essential services, from
+              educational workshops to healthcare access for underserved
+              communities.
             </p>
           </section>
 
@@ -244,8 +268,27 @@ export default function DonatePage() {
         </>
       ) : (
         <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-4">Thank You for Your Donation!</h2>
-          <p>Your support means a lot to us.</p>
+          <h2 className="text-2xl font-semibold mb-4">
+            Thank You, {donorName}!
+          </h2>
+          <p>
+            Your generous donation of ${amount} is truly appreciated. With your
+            support, we’re able to make a lasting impact in our community.
+          </p>
+          <p className="mt-4">
+            We’ve sent a confirmation email to{" "}
+            <span className="font-semibold">{donorEmail}</span> with details of
+            your donation.
+          </p>
+          <p className="mt-4">
+            Please check your inbox for further information. If you have any
+            questions, feel free to contact us!
+          </p>
+          <div className="mt-6">
+            <Link href="/" className="text-blue-500 hover:underline">
+              Return to Home
+            </Link>
+          </div>
         </div>
       )}
     </div>
