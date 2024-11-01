@@ -14,7 +14,7 @@ const locations = [
    { id: 2, name: "Health Clinic", position: [0.2785, 32.3056] as [number, number] },
    { id: 3, name: "Youth Center", position: [0.2567, 32.6244] as [number, number] },
    { id: 4, name: "Local School", position: [0.3071, 32.5811] as [number, number] },
-   { id: 5, name: "Park", position: [0.2875, 32.5903] as [number, number] },
+   { id: 5, name: "Environmental awareness", position: [0.2875, 32.5903] as [number, number] },
 ];
 
 interface Location {
