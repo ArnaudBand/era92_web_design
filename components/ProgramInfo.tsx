@@ -32,6 +32,8 @@ const Programs = () => {
               <Image
                 src={program.images[1]}
                 alt={program.title}
+                width={500}
+                height={500}
                 className="w-full h-full object-cover rounded-md shadow-lg"
               />
             </div>
