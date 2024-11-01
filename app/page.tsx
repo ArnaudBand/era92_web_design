@@ -66,8 +66,8 @@ export default function HomePage() {
         </div>
       </section>
       {/* Engagement Widgets Section */}
-      <section className="py-16 px-6 bg-gray-100">
-        <h2 className="text-3xl font-semibold text-center mb-10">
+      <section className="py-16 px-6  bg-gray-100">
+        <h2 className="text-3xl text-black font-semibold text-center mb-10">
           Stay Updated
         </h2>
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
