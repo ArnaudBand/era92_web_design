@@ -1,5 +1,6 @@
 "use client";
 
+import ImpactCommunity from '@/components/ImpactCommunity';
 import Programs from '@/components/ProgramInfo'
 import TestimonialSlider from '@/components/TestimonialSlider';
 import dynamic from "next/dynamic";
@@ -21,6 +22,14 @@ export default function ProgramsPage() {
             <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden shadow-md">
                <MapComponent />
             </div>
+         </section>
+
+         {/* Impact the communtiy */}
+         <section className="py-10 px-6 text-black">
+         <h2 className="text-3xl font-semibold text-center mb-6">
+            Impact in the Community
+         </h2>
+         <ImpactCommunity />
          </section>
 
          {/* Success Stories */}
