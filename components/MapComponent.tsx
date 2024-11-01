@@ -22,7 +22,7 @@ const MapComponent = () => {
       <div className="h-[500px] w-full rounded-lg overflow-hidden shadow-md">
          <MapContainer
             center={[0.347596, 32.582520]} // Default center point
-            zoom={6}
+            zoom={9}
             scrollWheelZoom={true}
             className="h-full w-full"
          >
