@@ -47,11 +47,11 @@ The website consists of the following three pages:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/nonprofit-website.git
+   git clone git@github.com:ArnaudBand/era92_web_design.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd nonprofit-website
+   cd era92_web_design
    ```
 3. Install dependencies:
    ```bash
