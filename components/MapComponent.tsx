@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
-
-// Default icon fix for Leaflet + Next.js
 import "leaflet/dist/leaflet.css";
+
 L.Icon.Default.mergeOptions({
    iconRetinaUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
    iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
@@ -13,7 +12,9 @@ L.Icon.Default.mergeOptions({
 const locations = [
    { id: 1, name: "Community Center", position: [0.2498, 32.6092] as [number, number] },
    { id: 2, name: "Health Clinic", position: [0.2785, 32.3056] as [number, number] },
-   // Add more locations as needed
+   { id: 3, name: "Youth Center", position: [0.2567, 32.6244] as [number, number] },
+   { id: 4, name: "Local School", position: [0.3071, 32.5811] as [number, number] },
+   { id: 5, name: "Park", position: [0.2875, 32.5903] as [number, number] },
 ];
 
 interface Location {
@@ -31,7 +32,7 @@ const FitMapBounds = ({ locations }: { locations: Location[] }) => {
       map.fitBounds(bounds); // Fit the map to the bounds of the markers
    }, [map, locations]); // Re-run this effect if the map or locations change
 
-   return null; // This component does not render anything
+   return null;
 };
 
 const MapComponent = () => {
