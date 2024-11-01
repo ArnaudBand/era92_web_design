@@ -50,7 +50,7 @@ const ImpactCommunity = () => {
             className="w-full h-48 md:h-64 lg:h-72 object-cover transition-transform duration-300"
           />
           {/* Overlay for the image */}
-          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div className="absolute inset-0 flex items-center justify-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="p-4 text-center text-sm md:text-base">{image.text}</p>
           </div>
           {/* Description */}
