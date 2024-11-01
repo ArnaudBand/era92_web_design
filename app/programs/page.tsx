@@ -1,4 +1,4 @@
-import MapComponent from '@/components/MapComponent';
+// import MapComponent from '@/components/MapComponent';
 import Programs from '@/components/ProgramInfo'
 
 export default function ProgramsPage() {
@@ -12,7 +12,7 @@ export default function ProgramsPage() {
          <section className="py-16 px-6 text-black bg-gray-100">
             <h2 className="text-3xl font-semibold text-center mb-6">Where We Work</h2>
             <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden shadow-md">
-               <MapComponent />
+               {/* <MapComponent /> */}
             </div>
          </section>
 
