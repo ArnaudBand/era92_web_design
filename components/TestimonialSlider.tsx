@@ -1,29 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-
-const testimonials = [
-  {
-    text: "Thanks to the support from this organization, my family has new opportunities and a brighter future.",
-    author: "Alex, Program Participant",
-  },
-  {
-    text: "The workshops gave me skills and confidence to pursue my dream job.",
-    author: "Jamie, Workshop Attendee",
-  },
-  {
-    text: "Our community has benefited immensely from the health services provided.",
-    author: "Sam, Community Leader",
-  },
-  {
-    text: "I feel empowered and prepared to take on new challenges in life.",
-    author: "Taylor, Youth Program Participant",
-  },
-  {
-    text: "The food security program has been a lifeline for us.",
-    author: "Chris, Beneficiary",
-  },
-];
+import { testimonials } from "@/types";
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +29,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="w-full max-w-3xl mx-auto p-4 relative">
-      <div className="w-full bg-white rounded-lg shadow-md py-4 min-h-[200px] flex flex-col items-center justify-center space-y-4">
+      <div className="w-full bg-white rounded-lg drop-shadow-2xl py-4 min-h-[200px] flex flex-col items-center justify-center space-y-4">
         <p className="text-gray-600 italic text-center">
           &quot;{testimonials[currentIndex].text}&quot;
         </p>
