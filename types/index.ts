@@ -5,7 +5,7 @@ export const programs = [
       "Equipping community members with skills and resources for personal and professional growth.",
     moreInfo:
       "Our workshops cover essential skills, such as financial literacy, which includes budgeting, saving, and investing basics; digital skills training, which introduces individuals to computer literacy, coding, and online safety; and career development sessions, including resume building, interview preparation, and networking strategies. We also offer specialized programs on entrepreneurship for those interested in starting small businesses.",
-    images: ["/assets/i13.jpg", "/assets/i14.jpg"],
+    images: ["/assets/i13.jpg", "/assets/i34.png"],
   },
   {
     title: "Health Initiatives",
@@ -46,5 +46,28 @@ export const programs = [
     moreInfo:
       "Crisis relief efforts include emergency supply distribution, which offers essentials like food, water, and hygiene products to those in immediate need; temporary shelter for individuals and families displaced by disasters; psychological and emotional support services for trauma recovery; and coordination with local authorities and organizations to ensure swift and effective responses to natural disasters, public health crises, and other emergencies.",
     images: ["/assets/i23.jpg", "/assets/i24.jpg"],
+  },
+];
+
+export const testimonials = [
+  {
+    text: "Thanks to the support from this organization, my family has new opportunities and a brighter future.",
+    author: "Alex, Program Participant",
+  },
+  {
+    text: "The workshops gave me skills and confidence to pursue my dream job.",
+    author: "Jamie, Workshop Attendee",
+  },
+  {
+    text: "Our community has benefited immensely from the health services provided.",
+    author: "Sam, Community Leader",
+  },
+  {
+    text: "I feel empowered and prepared to take on new challenges in life.",
+    author: "Taylor, Youth Program Participant",
+  },
+  {
+    text: "The food security program has been a lifeline for us.",
+    author: "Chris, Beneficiary",
   },
 ];
